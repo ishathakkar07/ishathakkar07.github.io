@@ -21,25 +21,30 @@ Version B will produce a higher percentage of YES responses than Version A becau
 
 Model: GPT-5.6 Sol Max
 
-Persona: A University of Iowa student with a limited clothing budget who wants to find a thrift shop in Iowa City this weekend.
+Persona: A University of Iowa student with a limited clothing budget who wants to explore thrift-shop options in Iowa City while evaluating a fictional classroom website prototype.
 
 Every trial will be conducted in a fresh conversation with no memory of earlier trials. The same model and settings will be used throughout the experiment.
 
 ## Exact prompt
 
-You are a University of Iowa student with a limited clothing budget who wants to find a thrift shop in Iowa City this weekend. You have never seen this website before.
+You are evaluating the navigation of a fictional classroom website prototype. For this task, assume that the fictional shop profiles are content you are allowed to explore. Do not base your decision on whether the businesses exist in real life.
 
-Read the homepage text below. Based only on this page, would you click the main hero button to view the thrift-shop listings?
+You are a University of Iowa student with a limited clothing budget who wants to explore thrift-shop options in Iowa City.
+
+Read the homepage text below. Based on the page and the wording of its main hero button, would you click that button to view the thrift-shop listings?
 
 Reply in exactly two lines:
 Decision: YES or NO
 Reason: one sentence only
 
 BEGIN PAGE
-[THE COMPLETE VISIBLE PAGE TEXT FOR THE RANDOMLY ASSIGNED VERSION]
+[PASTE THE COMPLETE ASSIGNED PAGE TEXT HERE]
 END PAGE
-
 The wording above will remain identical in every trial. Only the assigned page text will change.
+
+## Change log
+
+November 20, 2026 — One pilot trial showed that the required fictional-site disclaimer was driving the response rather than the CTA wording. That pilot response was retained but excluded from the analysis, and the prompt was clarified before restarting the 100 main trials.
 
 ## Assignment
 
